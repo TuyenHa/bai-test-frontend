@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lato";
   background-color: #fff;
   color: #2C2A29;
   padding: 20px;
@@ -16,34 +16,36 @@ body {
 }
 
 .page__title {
+  font-family: "Lora";
   text-align: center;
   font-size: 40px;
   margin-bottom: 57px;
+  font-weight: 400;
 }
 
 .top-section {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 40px;
   margin-bottom: 20px;
 }
 
 .top-section__image {
-  width: 385px;
-  height: 628px;
+  width: 420px;
+  height: 686px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 .top-section__description {
   max-width: 800px;
-  margin: 40px auto 50px;
+  margin: 60px auto 80px;
   text-align: center;
   font-size: 16px;
 }
 
 .top-section__description p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 15px;
   text-indent: 2em;
@@ -83,18 +85,24 @@ body {
   margin-bottom: 12px;
   font-weight: 400;
   line-height: 74px;
+  font-family: "Lora";
 }
 
 .section__text-block-item h3 {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
+  margin: 20px 0 10px;
 }
 
 .section__text-block p {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 10px;
+}
+
+.section__text-block--order-4 p {
+  margin: 20px 0 10px;
 }
 
 .section__image-block--order-1 {
@@ -146,5 +154,21 @@ body {
   }
   .section__text-block {
     padding: 20px;
+  }
+  .top-section__description {
+    margin: 30px auto 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .section {
+    margin-top: 65px;
+  }
+}
+
+/* iPad Air portrait (820px width) */
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+  .section {
+    margin-top: 15px;
   }
 }
